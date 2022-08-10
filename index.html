@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="description" content="Webpage description goes here" />
+ <meta charset="utf-8">
+ <title>Change_me</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="author" content="">
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js"></script>
+</head>
+<body>
+ 
+<div class="container">
+    <form>
+        <label id="class">Class: <input type="text"></label>
+        <label id="subject">Subject: <input type="text"></label>
+        <label id="date">:Date <input type="Date" name="" placeholder="Enter your date"></label>
+        <input type="submit" value="Submit">
+    </form>
+    <p>
+        Your class is <span id="outputClass">____</span>. 
+        The subject is <span id="outputSubject">____</span>.
+        The date is <span id="outputDate">____</span>. 
+        </p>
+ 
+</div>
+<script>
+    document.getElementById("class").onclick = function(){
+	var myClass = prompt("Enter your class");
+  document.getElementById("outputClass").innerText = myClass;
+}
+document.getElementById("subject").onclick = function(){
+	var mySubject= prompt("Enter your subject");
+  document.getElementById("outputSubject").innerText = mySubject;
+}
+document.getElementById("date").onclick = function(){
+	var theDate= prompt("Date today");
+  document.getElementById("outputDate").innerText = theDate;
+}
+
+
+</script>
+</body>
+</html>
